@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+nav {
+    background-color: purple;
+    color: #ffffff;
+}
+
+.navbar-brand span {
+    color: black;
+}
+
+main {
+    height: 450px;
+    background-image: url(img/fondo\ messi2.jpg);
+    background-size: cover;
+    background-position: center;
+    /*     display: grid;
+    place-items: center ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    padding: 20px;
+    border: 5px solid purple;
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1 {
+    color: purple;
+    text-shadow: 0 0 5px #000;
+
+}
+
+
+h2 {
+    color: #ffff;
+    background-color: rgb(224, 161, 224);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.call p {
+    margin-bottom: 20px;
+
+}
+
+.call a {
+    background-color: purple;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.call a:hover {
+    background-color: #333;
+    color: #ffff;
+}
+
+.nleft {
+    min-height: 250px;
+    background-color: #333;
+    background-image: url(img/foto\ mesis\ bn.jpg);
+    background-size: cover;
+    background-position: top;
+
+}
+
+.nright {
+    padding: 20px;
+}
+
+h3 {
+    color: purple;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    background-color: purple;
+    grid-gap: 20px;
+}
+
+.item {
+    border: 5px solid #000;
+    background-color: purple;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 {
+    background-image: url(img/boca.jpg);
+}
+
+.item2 {
+    background-image: url(img/tabla\ boca.jpeg)
+}
+
+.item3 {
+    background-image: url(img/vino\ river.jpg);
+}
+
+.item4 {
+    background-image: url(img/river.jpg);
+}
+
+.item5 {
+    background-image: url(img/cuadro\ messi.jpg);
+}
+
+.item6 {
+    background-image: url(img/foto\ mesis\ bn.jpg)
+}
+
+.item7 {
+    background-image: url(img/argentina.jpeg);
+}
+
+.item8 {
+    background-image: url(img/cuado\ messi\ diego.jpeg);
+}
+
+/* galeria termina */
+
+/*  ---------PAGINA NOSOTROS----- */
+article {
+    background-image: url(img/messi2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    height: auto;
+    max-height: 90%;
+    border: 5px solid purple;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-top: auto;
+    overflow: hidden;
+
+}
+
+.contenedor h1 {
+    color: rgb(146, 34, 127);
+    text-shadow: 0 0 5px #000;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contenedor p {
+    margin-bottom: 10px;
+}
+
+.imagenNosotros {
+    background-size: 95%;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    margin: 30px;
+    margin-top: 0px;
+    border: 8px solid black;
+    background-image: url(img/box\ diego.jpg);
+}
+
+/* ------------PAGINA PRODUCTOS--------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* -----------footer------ */
+footer {
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes a {
+    color: purple;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.what {
+    height: 40px;
+    width: 40px;
+    background-color: springgreen;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+
+/* media queries inicia */
+@media only screen and (min-width:480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .nosotros {
+        display: flex;
+    }
+
+    .nright,
+    .nleft {
+        width: 50%;
+    }
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .item2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .item4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .item5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .item6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .item7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .item8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+}
+
+/* media queries finaliza */
