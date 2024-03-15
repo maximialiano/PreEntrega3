@@ -5,6 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!-- Agrega los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Agrega estilos personalizados -->
+    <style>
+        /* Estilo para el botón de WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            background-color: springgreen;
+            bottom: 40px;
+            height: 40px;
+            width: 40px;
+            right: 40px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            /* Asegura que esté por encima de otros elementos */
+        }
+    </style>
+
     <link rel="shortcut icon" href="img/argentina.ico" type="image/x-icon">
 
     <!-- bs empieza -->
@@ -100,9 +122,20 @@
                     </a>
                 </div>
     </footer>
-    <a href="https://walink.co/cf1f8a" class="what" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+
+
+    <div class="container">
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/1173690554" class="whatsapp-btn" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+
+    <!-- Incluye la biblioteca de jQuery (necesaria para algunos componentes de Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Incluye los scripts de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
     <!-- separete inicia -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
