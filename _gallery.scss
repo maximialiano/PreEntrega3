@@ -1,0 +1,43 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    margin: 20px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:calc($size6*2);
+    @include pad;
+}
+
+.product img {
+    max-width: $size5;
+    height: auto;
+}
+
+.product img {
+    max-width: $size5;
+    height: auto;
+}
+
+
+.product h3 {
+    margin-top: $size0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: $color9;
+}
+.product img {
+    max-width: $size5;
+    height: auto;
+
+}

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Descubre el mundo del fútbol y el arte con nosotros. Ofrecemos una variedad de servicios, incluyendo tabla de asado, box de cervezas y grabado de cuchillos. Explora nuestra colección única de productos y disfruta de la pasión por el fútbol y el arte en cada detalle.">
+
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -80,37 +83,39 @@
         </div>
     </nav>
     <!-- nav termina -->
-    <main>
-        <div class="formulario">
-            <form>
-                <br>
-                <label for="nombre_apellido">Nombre:</label>
-                <input type="text" name="nombre_apellido" placeholder="Nombre" /><br>
-                <label for="Email"><br>Email:</label>
-                <input type="email" placeholder="Email"><br><br>
-                <label for="nombre_apellido">Estado civil</label>
-                <select name="Estado civil">
-                    <option>Soltero</option>
-                    <option>Casado</option>
-                    <option>Divorciado</option>
-                    <option>Viudo</option>
-                </select>
-                <div class="newletter">
-                    <h5>Desea recibir el Newsletter?</h5>
-                    <label for="">si</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">no</label>
-                    <input type="checkbox" name="" id=""><br><br>
-                </div>
-                <div class="comentarios">
-                    <label for="">Comentarios</label><br>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Coloca tu comentario"></textarea><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="borrar">
-                </div>
-            </form>
+
+    <h2>Formulario de Registro</h2>
+    <form action="/submit" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
         </div>
-    </main>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{10}" required>
+        </div>
+        <div>
+            <label for="club">Club:</label>
+            <input type="text" id="club" name="club" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
 
     <footer>
         <p>Todos los derechos son reservados por copyright<p>

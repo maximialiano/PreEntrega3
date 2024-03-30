@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+$color1:purple;
+$color2:black;
+$color3:blue;
+$color4: rgba(184, 127, 184, 0.3);
+$color5:rgba(73, 12, 50, 0.3);
+$color6: #4158D0;
+$color7: #ffffff;
+$color8:rgb(161, 224, 169);
+$color9: #333;
+
+
+$size0:10px;
+$size1: 20px;
+$size2: 30px;
+$size3: 40px;
+$size4: 50%;
+$size5: 100%;
+$size6: 100px;
+
+@mixin flex {display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@mixin pad {
+    text-align: center;
+    padding: 20px
+}
+
+
+@import "_navbar";
+@import "_galeria";
+@import "_call";
+@import "_gallery";
+@import "_footer";
+@import "_contacto";
+@import "_objetivo";
+@import "_productos";
+@import "_nosotros";
+@import "_media queries";

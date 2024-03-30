@@ -1,0 +1,36 @@
+form {
+    width: 60%;
+    margin: 50px auto;
+    background-color: $color1;
+    background-image: radial-gradient(circle, #e800ff, #9273ff, #4594ff, #4ba4e6, #84aabe);
+    border-radius: 15px;
+    padding:$size1;
+}
+
+
+input, select {
+    display: block;
+    width: $size5;
+    margin-bottom: $size0;
+    padding: $size1;
+    border: none;
+    border-radius: 5px; 
+}
+
+
+button[type="submit"] {
+    display: block;
+    width: $size5;
+    padding: $size0;
+    border: none;
+    border-radius: 5px;
+    background-color: $color7;
+    color: $color1;
+    cursor: pointer; 
+}
+
+
+label {
+    font-weight: bold;
+    color: $color7;
+}

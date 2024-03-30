@@ -1,0 +1,24 @@
+.contenedor h2{
+    color: $color7;
+    font-style: bold;
+}
+
+.pleft{
+height:250px ;
+background-color: $color9;
+background-image: url(img/marca.jpeg);
+background-size: cover;
+background-position: center;
+
+}
+
+.pright{
+    padding: $size1;
+
+}
+
+.pright h3{
+    color: $color2;
+    font-size: 25px;
+    margin-bottom: 15px;
+}

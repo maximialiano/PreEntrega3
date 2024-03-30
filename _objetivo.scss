@@ -1,0 +1,9 @@
+.nright {
+    @include pad;
+}
+
+h3 {
+    color: $color1;
+    font-size: 25px;
+    margin-bottom: 15px;
+}

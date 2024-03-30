@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $size0;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: $size5;
+    height: auto;
+    display: block;
+}

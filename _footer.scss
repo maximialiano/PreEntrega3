@@ -1,0 +1,31 @@
+footer {
+    background-color: $color2;
+    color: $color7;
+    font-size: 18px;
+    @include pad;
+}
+
+.redes {
+    margin-top: $size1;
+}
+
+.redes a {
+    color: $color1;
+    text-decoration: none;
+    letter-spacing:$size0;
+    font-size: $size2;
+}
+
+.what {
+    height: $size3;
+    width: $size3;
+    background-color: springgreen;
+    color: $color7;
+    text-decoration: none;
+    position: fixed;
+    right: $size3;
+    bottom: $size3;
+    text-align: center;
+    font-size: 25px;
+    border-radius: $size1;
+}

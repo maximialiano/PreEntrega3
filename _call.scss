@@ -1,0 +1,61 @@
+main {
+    height: 450px;
+    background-image: linear-gradient(to right bottom, $color4, $color5) ,url(img/fondo\ messi2.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flex;
+}
+
+.call {
+    background-color:$color7;
+    width: 70%;
+    border: 5px solid $color1;
+    border-radius: $size1;
+    @include pad;
+
+}
+
+h1 {
+    color: $color1;
+    text-shadow: 0 0 5px $color2;
+}
+
+h2 {
+    color: $color7;
+    background-color: $color8;
+    background-image: radial-gradient(circle, #e800ff, #9273ff, #4594ff, #4ba4e6, #84aabe);
+    text-align: center;
+    font-size: $size2;
+    padding: $size1;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 2;
+    }
+}
+
+.call p {
+    margin-bottom: 20px;
+
+}
+
+.call a {
+    background-color: $color1;
+    color: $color2;
+    text-decoration: none;
+    padding: $size0 $size1;
+    border-radius: $size1;
+}
+
+.call a:hover {
+    background-color: $color9;
+    color: $color7;
+}
